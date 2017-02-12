@@ -1,0 +1,2 @@
+meghashyam,tv,4:00,6:00,50.0,Hard,4:00,4:49,1.3175E-4
+meghashyam,fridge,7:00,10:00,70.0,Hard,7:44,8:54,3.296E-4
