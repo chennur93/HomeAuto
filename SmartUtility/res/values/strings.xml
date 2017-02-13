@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartUtility</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_register">UserRegister</string>
+    <string name="title_activity_user_home">User_home</string>
+    <string name="title_activity_manage__appliance">Manage_Appliance</string>
+    <string name="title_activity_add_view_app">AddViewApp</string>
+    <string name="title_activity_view_app">ViewApp</string>
+    <string name="title_activity_edit_app">EditApp</string>
+    <string name="title_activity_view_schedule">ViewSchedule</string>
+    <string name="title_activity_manage_schedule">ManageSchedule</string>
+    <string name="title_activity_pre_view">PreView</string>
+
+</resources>

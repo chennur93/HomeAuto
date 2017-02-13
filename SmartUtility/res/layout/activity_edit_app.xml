@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uncc.vedhasd.smartutility.UserRegister" >
+
+    <TextView
+        android:id="@+id/teUserHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID:"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView 
+        android:id="@+id/teAppname"
+        android:layout_below="@+id/teUserHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Appliance Name"/>
+    
+    <EditText
+        android:id="@+id/eeAppname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/teUserHeader"
+        android:layout_toRightOf="@+id/teAppname"
+        android:inputType="text"
+        android:hint="E.g Washing Machine" />
+    
+    <TextView 
+        android:id="@+id/teEnergy"
+        android:layout_below="@+id/teAppname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/teAppname"
+        android:text="Energy"/>
+    
+    <EditText
+        android:id="@+id/eeEnergy"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eeAppname"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/eeAppname"
+        android:inputType="number"
+        android:hint="E.g 38 for 38Watts" />
+    
+    <TextView 
+        android:id="@+id/teOpTime"
+        android:layout_below="@+id/teEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/teAppname"
+        android:text="Operation Time"/>
+    
+    <EditText
+        android:id="@+id/eeOpTime"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eeEnergy"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/eeAppname"
+        android:inputType="number"
+        android:hint="Enter time in minutes" />
+    
+    <TextView 
+        android:id="@+id/teStartTime"
+        android:layout_below="@+id/teOpTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/teAppname"
+        android:text="Start Time"/>
+    
+    <EditText
+        android:id="@+id/eeStartTime"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/eeAppname"
+        android:layout_below="@+id/eeOpTime"
+        android:inputType="time"
+        android:hint="E.g 0800 for 8:00am" />
+    
+    <TextView 
+        android:id="@+id/teDeadline"
+        android:layout_below="@+id/teStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/teAppname"
+        android:text="Deadline"/>
+    
+    <EditText
+        android:id="@+id/eeDeadline"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+       	android:textSize="14sp"
+        android:layout_alignLeft="@+id/eeAppname"
+        android:layout_below="@+id/eeStartTime"
+        android:inputType="time"
+        android:hint="E.g 0800 for 8:00am" />
+    
+    <TextView 
+        android:id="@+id/teConstraint"
+        android:layout_below="@+id/teDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/teAppname"
+        android:text="Constraints"/>
+    
+    <EditText
+        android:id="@+id/eeConstraints"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+       	android:textSize="14sp"
+        android:layout_alignLeft="@+id/eeAppname"
+        android:layout_below="@+id/eeDeadline"
+        android:inputType="text"
+        android:hint="E.g Soft or Hard" />
+    
+    <!-- Spinner will come here  -->
+    <!-- 
+    <TextView 
+        android:id="@+id/tPhoneno"
+        android:layout_below="@+id/tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/tPassword"
+        android:text="Phone Number"/>
+    
+    <EditText
+        android:id="@+id/ePhoneno"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignBottom="@+id/tPhoneno"
+        android:layout_below="@+id/eEmail"
+        android:layout_toRightOf="@+id/tPhoneno"
+        android:inputType="phone" />
+     -->
+     
+     
+      
+    <Button 
+        android:id="@+id/beDone"
+        android:layout_below="@+id/teConstraint"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"/>
+    
+    <Button 
+        android:id="@+id/beBack"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/teConstraint"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/beDone"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+<!-- 
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eAppname"
+        android:layout_below="@+id/eDeadline"
+        android:entries="@+id/" />
+-->
+</RelativeLayout>
+
+</ScrollView>
